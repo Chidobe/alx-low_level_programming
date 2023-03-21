@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * main - prints the 26 alphabets
+ * print_alphabet - prints the 26 alphabets
  * Return: 0
  */
 
