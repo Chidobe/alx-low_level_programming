@@ -50,7 +50,7 @@ int _strlen(char *s)
 int i = 0;
 
 if (s == NULL)
-return (int)(NULL);
+return (0);
 while (i >= 0)
 {
 if  (s[i] == 0)
