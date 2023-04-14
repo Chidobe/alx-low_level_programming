@@ -10,19 +10,28 @@
 char *_strdup(char *str)
 {
 	char *pstr;
-	long unsigned int i;
+	unsigned int long i;
 
 	if (str == NULL)
 	{
 		return (NULL);
 	}
-	else 
+	else
 	{
 	pstr = malloc(sizeof(char) + 12);
+
+	if (pstr == NULL)
+	{
+
+		return (NULL);
+	}
+	else
+	{
 	for (i = 0; i < sizeof(char) + 12; i++)
 	{
 	pstr[i] = str[i];
 	}
 	return (pstr);
+	}
 	}
 }
