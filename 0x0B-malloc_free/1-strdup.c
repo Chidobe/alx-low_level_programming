@@ -18,7 +18,7 @@ char *_strdup(char *str)
 	}
 	else
 	{
-	pstr = malloc(sizeof(char) * 2);
+	pstr = malloc(sizeof(str));
 
 	if (pstr == NULL)
 	{
@@ -27,7 +27,7 @@ char *_strdup(char *str)
 	}
 	else
 	{
-	for (i = 0; i < sizeof(char) + 12; i++)
+	for (i = 0; i < sizeof(str); i++)
 	{
 	pstr[i] = str[i];
 	}
