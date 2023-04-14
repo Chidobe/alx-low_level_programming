@@ -12,6 +12,7 @@ int _strlen(char *s);
 char *_strdup(char *str)
 {
 char *pstr;
+unsigned int long len = _strlen(str);
 unsigned int long i;
 
 if (str == NULL)
@@ -20,7 +21,7 @@ return (NULL);
 }
 else
 {
-pstr = malloc(_strlen(str) + 1);
+pstr = malloc(len + 1);
 
 if (pstr == NULL)
 {
@@ -28,7 +29,7 @@ return (NULL);
 }
 else
 {
-for (i = 0; i < _strlen(str) + 1; i++)
+for (i = 0; i < len + 1; i++)
 {
 pstr[i] = str[i];
 }
