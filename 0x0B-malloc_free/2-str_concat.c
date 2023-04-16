@@ -33,14 +33,11 @@ for (i = 0; s1[i] != 0; i++)
 {
 concatStr[i] = s1[i];
 }
-if (s1[i] == 0)
-{
 for (j = i; j < size; j++)
 {
 for (a = 0; a < j; a++)
 {
 concatStr[j] = s2[a];
-}
 }
 }
 return (concatStr);
