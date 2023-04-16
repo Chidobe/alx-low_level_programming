@@ -9,7 +9,7 @@ int _strlen(char *s);
  *Return: pointer to concatenated string
  */
 
-char *_str_concat(char *s1, char *s2)
+char *str_concat(char *s1, char *s2)
 {
 char *concatStr;
 unsigned int long size;
