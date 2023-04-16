@@ -3,7 +3,7 @@
 
 int _strlen(char *s);
 /**
- *_str_concat - function to concatenate strings
+ *str_concat - function to concatenate strings
  *@s1: first string
  *@s2: second string
  *Return: pointer to concatenated string
@@ -29,7 +29,7 @@ return (NULL);
 }
 else
 {
-for (i = 0; i < size; i++)
+for (i = 0; s1[i] != 0; i++)
 {
 concatStr[i] = s1[i];
 }
