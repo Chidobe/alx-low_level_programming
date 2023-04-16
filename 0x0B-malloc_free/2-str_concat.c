@@ -33,12 +33,9 @@ for (i = 0; s1[i] != 0; i++)
 {
 concatStr[i] = s1[i];
 }
-for (j = i; j < size; j++)
-{
-for (a = 0; a < j; a++)
+for (j = i, a = 0; s2[a] != 0; j++, a++)
 {
 concatStr[j] = s2[a];
-}
 }
 return (concatStr);
 }
